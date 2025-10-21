@@ -1,0 +1,67 @@
+body {
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden; 
+    margin: 0;
+}
+#content {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+#shark, #turtle, .diver {
+    position: absolute;
+}
+#shark img, #turtle img, .diver img {
+    width: auto;
+    height: 100px;
+}
+#shark {
+    animation-name: Shark;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes Shark {
+    0%   { left: -200px; top: 400px; transform: scaleX(1); }
+    49%  { left: 100%; top: 350px; transform: scaleX(1); }
+    50%  { left: 100%; top: 350px; transform: scaleX(-1); }
+    99%  { left: -200px; top: 400px; transform: scaleX(-1); }
+    100% { left: -200px; top: 400px; transform: scaleX(1); }
+}
+#turtle {
+    animation: Turtle 30s linear infinite;
+}
+@keyframes Turtle {
+    0%   { left: 100%; top: 600px; transform: scaleX(-1); }
+    49%  { left: -200px; top: 550px; transform: scaleX(-1); }
+    50%  { left: -200px; top: 550px; transform: scaleX(1); }
+    99%  { left: 100%; top: 600px; transform: scaleX(1); }
+    100% { left: 100%; top: 600px; transform: scaleX(-1); }
+}
+#diver1 {
+    animation: Diver1 15s ease-in-out infinite;
+}
+@keyframes Diver1 {
+    0%   { top: 100px; left: 10%; }
+    50%  { top: 500px; left: 20%; }
+    100% { top: 100px; left: 10%; }
+}
+#diver2 {
+    animation: Diver2 18s ease-in-out infinite;
+    animation-delay: -5s; /* Bắt đầu ở một thời điểm khác */
+}
+@keyframes Diver2 {
+    0%   { top: 150px; left: 40%; }
+    50%  { top: 600px; left: 55%; }
+    100% { top: 150px; left: 40%; }
+}
+#diver3 {
+    animation: Diver3 22s ease-in-out infinite;
+    animation-delay: -10s;
+}
+@keyframes Diver3 {
+    0%   { top: 50px; left: 80%; }
+    50%  { top: 450px; left: 70%; }
+    100% { top: 50px; left: 80%; }
+}
