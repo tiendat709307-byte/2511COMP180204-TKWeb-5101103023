@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lễ Hội Halloween</title>
+</head>
+<style>
+body {
+    background: url('https://image.dienthoaivui.com.vn/x,webp,q90/https://dashboard.dienthoaivui.com.vn/uploads/wp-content/uploads/2021/04/anh-nen-halloween-1.jpg');
+    color: white;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+section {
+    background: rgba(0, 0, 0, 0.7);
+    margin: 30px auto;
+    padding: 20px;
+    width: 90%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px black;
+    font-family: 'Times New Roman', Times, serif;
+}
+p {
+    color:#f69e9e;
+    font-size: 17px;
+}
+h2 {
+    color: orange;
+    text-align: center;
+    margin-bottom: 15px;
+}
+.khung-san-pham {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.san-pham {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    width: 280px;
+    text-align: center;
+    padding: 15px;
+    transition: transform 0.3s;
+}
+.san-pham:hover {
+    transform: scale(1.05);
+    background: rgba(255, 100, 0, 0.3);
+}
+.san-pham img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.san-pham h3 {
+    color:rgba(231, 96, 0, 0.967);
+}
+.hinh-anh {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+}
+.hinh-anh img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+.hinh-anh img:hover {
+    transform: scale(1.1);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input, textarea, select {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+}
+button {
+    background: orange;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button:hover {
+    background: red;
+    color: white;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaa;
+}
+</style>
+<body>
+    <section id="lich-su">
+        <h2> Lịch Sử Lễ Hội Halloween</h2>
+        <p>
+        Lễ hội Halloween có nguồn gốc từ lễ Samhain của người Celt cổ đại. Đây là dịp để tưởng nhớ những linh hồn đã khuất, 
+        cũng là thời khắc giao mùa giữa thu và đông. Ngày nay, Halloween là dịp để mọi người hóa trang, vui chơi 
+        và cùng nhau chia sẻ niềm vui rùng rợn!
+        </p>
+    </section>
+    <section id="gian-hang">
+        <h2>Gian Hàng Sản Phẩm Halloween</h2>
+        <div class="khung-san-pham">
+        <div class="san-pham">
+            <h3> Kẹo Bí Ngô Ma Quái</h3>
+            <p>Ngọt ngào và đáng sợ – món quà hoàn hảo cho trẻ nhỏ.</p>
+        </div>
+        <div class="san-pham">
+            <h3>Máu Giả Rùng Rợn</h3>
+            <p>Phụ kiện không thể thiếu khi hóa trang thành ma cà rồng.</p>
+        </div>
+        <div class="san-pham">
+            <h3>Mặt Nạ Bóng Đêm</h3>
+            <p>Giúp bạn trở thành linh hồn bí ẩn nhất đêm Halloween.</p>
+        </div>
+        </div>
+    </section>
+    <section id="bo-suu-tap">
+        <h2> Bộ Sưu Tập Sticker Lễ Hội</h2>
+        <div class="hinh-anh">
+            <img src="img.halloween/Iconcreme-Halloween-Bat.512.png" >
+            <img src="img.halloween/Iconcreme-Halloween-Cat.512.png" >
+            <img src="img.halloween/Iconcreme-Halloween-Home.512.png" >
+            <img src="img.halloween/Iconcreme-Halloween-Mummy.512.png" >
+            <img src="img.halloween/Iconcreme-Halloween-Pumpkin.512.png" >
+            <img src="img.halloween/Iconcreme-Halloween-Twitter.512.png" >
+            <img src="img.halloween/Pumpkin.ico" >
+            <img src="img.halloween/Sea Monster.ico" >
+            <img src="img.halloween/Soul.ico" >
+            <img src="img.halloween/Witch.ico" >
+        </div>
+    </section>
+    <section id="lien-he">
+        <h2> Liên Hệ Với Chúng Tôi</h2>
+        <form id="form-lien-he">
+        <label for="ten">Họ và tên:</label>
+        <input type="text" id="ten" placeholder="Nhập họ tên của bạn"/>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Nhập email của bạn" />
+        <label for="noi-dung">Nội dung liên hệ:</label>
+        <textarea id="noi-dung" rows="4" placeholder="Viết lời nhắn của bạn..."></textarea>
+        <button type="submit">Gửi Liên Hệ</button>
+        </form>
+    </section>
+    <section id="dang-ky">
+        <h2> Đăng Ký Tham Gia Lễ Hội</h2>
+        <form id="form-dang-ky">
+        <label for="ho-ten">Họ và tên:</label>
+        <input type="text" id="ho-ten" placeholder="Nhập họ tên của bạn"/>
+        <label for="ma-sv">Mã số sinh viên:</label>
+        <input type="text" id="ma-sv" placeholder="VD: 47.01.104.123" />
+        <label for="lop">Khoa</label>
+        <input type="text" id="khoa" placeholder="VD: Công nghệ thông tin"/>
+        <label for="hoat-dong">Hoạt động tham gia:</label>
+        <input type="text" id="HDTG" placeholder="Nhập hoạt động của bạn tại bữa tiệc:"/>
+        <button type="submit">Đăng Ký Ngay</button>
+        </form>
+    </section>
+<footer>
+    <p> © 2025 - HCMUE | Halloween Festival </p>
+</footer>
+<script>
+document.getElementById("form-lien-he").addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Cảm ơn bạn đã liên hệ! Chúng tôi sẽ phản hồi sớm nhất!");
+    e.target.reset();
+});
+document.getElementById("form-dang-ky").addEventListener("submit", (e) => {
+    e.preventDefault();
+    alert("Bạn đã đăng ký thành công tham gia Lễ hội Halloween!");
+    e.target.reset();
+});
+</script>
+</body>
+</html>

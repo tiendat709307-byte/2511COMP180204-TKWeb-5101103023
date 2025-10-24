@@ -9,7 +9,7 @@ body {
     width: 100vw;
     height: 100vh;
 }
-#shark, #turtle, .diver {
+#shark, #turtle, .diver, #goldfish {
     position: absolute;
 }
 #shark img, #turtle img, .diver img {
@@ -49,7 +49,7 @@ body {
 }
 #diver2 {
     animation: Diver2 18s ease-in-out infinite;
-    animation-delay: -5s; /* Bắt đầu ở một thời điểm khác */
+    animation-delay: -5s;
 }
 @keyframes Diver2 {
     0%   { top: 150px; left: 40%; }
@@ -64,4 +64,14 @@ body {
     0%   { top: 50px; left: 80%; }
     50%  { top: 450px; left: 70%; }
     100% { top: 50px; left: 80%; }
+}
+#goldfish {
+    animation: goldfish 30s linear infinite;
+}
+@keyframes goldfish {
+    0%   { left: 100%; top: 0px; transform: scaleX(-1); }
+    49%  { left: -200px; top: 400px; transform: scaleX(-1); }
+    50%  { left: -200px; top: 550px; transform: scaleX(1); }
+    99%  { left: 100%; top: 700px; transform: scaleX(1); }
+    100% { left: 100%; top: 600px; transform: scaleX(-1); }
 }
